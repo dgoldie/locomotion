@@ -35,5 +35,7 @@ module Locomotion
     # For Foundation 5
     config.assets.precompile += %w( vendor/modernizr )
 
+    config.autoload_paths += %W(#{config.root}/lib)
+
   end
 end

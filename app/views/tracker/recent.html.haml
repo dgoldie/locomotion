@@ -1,0 +1,11 @@
+%h3 Recent Activity
+
+#chart
+  %ul{data: {role: :listview, inset: true}} 
+    for day in @json.reverse
+      %li
+        = format_date(day["date"])
+        unless day["summary"].blank?
+          for activity in day["summary"].find_all { |a| a["group"] == "walking"}
+            ="#{activity["steps"]} steps"
+

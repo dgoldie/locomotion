@@ -15,6 +15,8 @@ gem 'foundation-rails'
 gem 'haml-rails'
 gem 'puma'
 gem 'simple_form'
+gem 'oauth2'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]

@@ -1,0 +1,6 @@
+%h3 User Profile
+%ul{data: {role: :listview, inset: true}
+  %li
+    ="User ID #{@json["userId"]}"
+  %li
+    ="Date joined #{format_date(@json["profile"]["firstDate"])}"

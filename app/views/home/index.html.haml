@@ -1,1 +1,10 @@
-%h3 Home
+%h3 Moves API Demo
+%ul{data_role: :content}
+  %li
+    =link_to "User Profile", tracker_profile_path, data: {transition: :fade}
+  %li
+    =link_to "Recent walking activity", tracker_recent_path, data: {transition: :fade}
+  %li
+    =link_to "Log out", tracker_logout_path, data: {transition: :fade}
+
+
